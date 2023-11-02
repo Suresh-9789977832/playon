@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Kanit:ital,wght@0,400;1,300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,600;6..12,700&family=Poppins:wght@300;500;600;700&family=Quicksand:wght@300;500;700&family=Roboto:wght@100;300;400&family=Rubik:ital,wght@1,400;1,500&family=Tilt+Neon&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Tilt Neon;
+  }
+  *::-webkit-scrollbar{
+  display: none;    
+  }
+  .title{
+    color: red;
+  }
+.background_image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  
+  background-image: linear-gradient(to bottom, red,black);
+/* display: none; */
+}
+
+.blur_effect{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  overflow-y: scroll;
+  flex-direction: column;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+
+}
+select{
+  width:200px;
+  height: 30px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size:16px;
+  white-space: 10px;
+  color:black;
+  background-color: white;
+  font-weight: 800;
+}
+.select_box{
+  margin: 30px 0 0 68px;
+}        
+
+@media (max-width:768px) {
+    .bars{
+      display: none;
+    }
+}

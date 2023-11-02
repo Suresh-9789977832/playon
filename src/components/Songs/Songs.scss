@@ -1,0 +1,217 @@
+.songs_main{
+    display: flex;
+    flex-direction: row;
+    height: 88vh;
+    width: 100%;
+
+    .songs_main, .songs_left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .songs_main, .songs_left>img{
+        width:410px;
+        padding-bottom:10px ;
+        object-fit: contain;
+    }
+    .songs_main, .songs_left>h2{
+        color: white !important;
+    }
+    
+    .songs_main, .songs_right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+                // align-items: center;
+
+    }
+    .songs_head{
+        color: white;
+        display: flex !important;
+        justify-content: center;
+        padding-top: 25px;
+        position: sticky;
+        top: 0;
+               
+    }
+    .songs_container{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-left: 10px;
+        // border: 1px solid black;
+        height: 450px !important;
+        margin: 10px 100px 0 100px;
+        
+    }
+    .songs_container>div{
+        padding-bottom: 10px;
+    }
+    .songs_container>div:hover{
+        cursor: pointer;
+    }
+    
+    
+    .songs_item{
+        display: flex;
+        justify-content: space-between;  
+    }
+    .songs_img>img{
+        width: 80px;
+        object-fit: contain;
+    }
+    .songs_name{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 15px;
+        justify-content: center !important;
+    }
+    .songs_name>h3{
+        font-size: 22px !important;
+        color: white;
+    }
+    .songs_duration{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .back{
+        padding-right: 10px !important;
+        left: 38px;
+        top: 40px;
+        position: absolute;
+
+    }
+    .back:hover{
+        height:25px;
+        width:19px;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+}
+
+@media (max-width:2560px) {
+    .songs_left>img{
+        width:800px !important;
+        padding-bottom:10px ;
+        object-fit: contain;
+    }
+}
+
+@media (max-width:1440px) {
+    .songs_left>img{
+        width:400px !important;
+        padding-bottom:10px ;
+        object-fit: contain;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .songs_left>img{
+        width:300px !important;
+        padding-bottom:10px ;
+        object-fit: contain;
+    }
+}
+
+
+@media (max-width:768px) {
+    
+    .songs_main{
+        display: flex;
+        flex-direction: column;
+        height: 88vh;
+        width: 100%;
+        width: 100%;
+        overflow-X: hidden;
+        margin-top: 20px;
+    }
+
+        .songs_main, .songs_left{
+            width: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    
+        
+        .songs_main, .songs_right{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            min-width: 500px;
+        }
+        .songs_head>h2{
+display: none;
+        }
+        .songs_head{
+            color: white;
+            display: flex !important;
+            justify-content: center;
+            padding-top: 25px;
+            position: sticky !important;
+            top: 0;margin:10px  0px;
+            padding-top: 10px !important;
+            align-items: center !important;
+            
+        }
+        .songs_container{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            margin-left: 0px !important;
+            width: 100%;
+            height: 100% !important;
+            
+        }
+        .songs_container>div{
+            padding-bottom: 10px;
+        }
+    }
+
+    
+@media (max-width:425px) {
+    .songs_main{
+        display: flex !important;
+        align-items: center !important;
+    }
+    .back{
+        padding-right: 10px !important;
+        left: 30px !important;
+        top:20px !important;
+        position: absolute;
+
+    }
+    .songs_left>img{
+        width:250px !important;
+        padding-bottom:10px ;
+    }
+    
+    .songs_main, .songs_right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        align-items: center !important;
+        font-size: 12px !important;
+        
+    }
+    .songs_container{
+        padding-left: 90px !important;
+        width: 100% !important;
+        min-width: 350px !important;
+    }
+    .songs_name>h3{
+        font-size: 12px !important;
+    }
+      
+   
+        .songs_container>div{
+            padding-bottom: 10px;
+        }
+    }
+

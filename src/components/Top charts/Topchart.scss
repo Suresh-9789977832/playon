@@ -1,0 +1,129 @@
+.Top_chart{
+    height:550px;
+    width: 100%;
+    display: flex;
+    // border: 1px solid black;
+    margin:20px 0px 0 55px;
+    overflow-y: scroll;
+}
+
+
+h1{
+    font-weight: 900;
+    font-size: 35px;
+     color:  white;
+     text-shadow: 0 5px 8px rgba(0 , 0, 0, 0.8);
+     margin:20px 0px 0 70px
+
+}
+
+.Top_chart, .charts_container, .charts_left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    gap: 15px;
+    width:96%;
+}
+.charts_left>div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 10px;
+    width: 95% !important;  
+    border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.10);
+}
+.charts_left>div{
+    cursor: pointer;
+}
+.charts_left>div:hover .chart_icon{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.chart_img{
+    height:100px !important;
+    width: 100px !important;
+    object-fit: contain !important;
+    border-radius: 5px !important;
+
+}
+.Top_chart, .charts_container, .charts_left>div>p{
+    display: flex;
+
+}
+.chart>h2{
+    color: white;
+}
+.chart>h3{
+    color: white;
+    text-transform: capitalize;
+}
+
+.chart_inner{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart_icon{
+    width: 65px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px !important;
+    transition: transform .1s ease-in-out;
+    color: rgba(255,255,255, 0.80);  
+
+}
+
+@media (max-width:768px){
+    .Top_chart, .charts_container, .charts_left{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5px;
+        gap: 15px;
+        width:96%;
+    }
+    .Top_chart{
+        height:550px;
+        width: 100%;
+        display: flex;
+        // border: 1px solid black;
+        margin:20px 0px 0 20px;
+        overflow-y: scroll;
+    }
+    .padding{
+        padding: 10px !important;
+    }
+    
+    
+  }
+
+  
+@media (max-width:425px){
+    .Top_chart, .charts_container, .charts_left{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5px;
+        gap: 15px;
+        width:96%;
+    }
+    .Top_chart{
+        height:550px;
+        width: 100%;
+        display: flex;
+        // border: 1px solid black;
+        margin:20px 0px 0 5px;
+        overflow-y: scroll;
+    }
+    .padding{
+        padding: 10px !important;
+    }
+    .top_title{
+        margin-left: 18px !important;
+        font-size: 27px;
+    }
+    
+
+    
+  }

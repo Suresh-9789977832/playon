@@ -51,7 +51,6 @@ export default function Row({ fetch, name, selectbar,featureplay }) {
 
         },[1000])
     }
-console.log(context.open)
 
     return <>
             

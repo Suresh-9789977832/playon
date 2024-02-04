@@ -24,7 +24,6 @@ const Topchart = () => {
         },[1000])
     }
 
-    console.log(context.songs)
     return <>
                         <h1 className='top_title'>Top Charts</h1>
 

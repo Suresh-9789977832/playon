@@ -17,7 +17,6 @@ const Songs = () => {
     }
 
     
-    console.log(context.play)
     return <>
 
         <div className='songs_main'>

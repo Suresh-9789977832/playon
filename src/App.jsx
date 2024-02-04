@@ -13,7 +13,9 @@ function App() {
 
   
   const context = useContext(maincontext)
-console.log(context.list)
+  
+
+   
   
   return <>
     {
@@ -46,7 +48,6 @@ console.log(context.list)
 
     </div>):(<div className='blur_effect'>
             <Songs/>      
-          {/* <Bottom /> */}
   </div>
 
           )
@@ -55,6 +56,7 @@ console.log(context.list)
       <Bottom />
 
    
+      
 </div>
 
 
